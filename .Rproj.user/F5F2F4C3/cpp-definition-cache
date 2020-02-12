@@ -1,6 +1,105 @@
 [
     {
         "definitions" : [
+        ],
+        "file" : "/Users/EduardoR/Documents/DevProjs/MinimumRcpp/inst/include/MinimumRcpp.h",
+        "file_last_write" : 1581457896
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 26,
+                "file" : "/Users/EduardoR/Documents/DevProjs/MinimumRcpp/src/MinimumRcpp.cpp",
+                "kind" : 6,
+                "line" : 20,
+                "name" : "as(SEXP)",
+                "parent_name" : "",
+                "usr" : "c:@N@Rcpp@F@as#*$@S@SEXPREC#"
+            },
+            {
+                "column" : 24,
+                "file" : "/Users/EduardoR/Documents/DevProjs/MinimumRcpp/src/MinimumRcpp.cpp",
+                "kind" : 6,
+                "line" : 35,
+                "name" : "as(SEXP)",
+                "parent_name" : "",
+                "usr" : "c:@N@Rcpp@F@as#*$@S@SEXPREC#"
+            },
+            {
+                "column" : 25,
+                "file" : "/Users/EduardoR/Documents/DevProjs/MinimumRcpp/src/MinimumRcpp.cpp",
+                "kind" : 6,
+                "line" : 50,
+                "name" : "as(SEXP)",
+                "parent_name" : "",
+                "usr" : "c:@N@Rcpp@F@as#*$@S@SEXPREC#"
+            },
+            {
+                "column" : 25,
+                "file" : "/Users/EduardoR/Documents/DevProjs/MinimumRcpp/src/MinimumRcpp.cpp",
+                "kind" : 6,
+                "line" : 69,
+                "name" : "as(SEXP)",
+                "parent_name" : "",
+                "usr" : "c:@N@Rcpp@F@as#*$@S@SEXPREC#"
+            },
+            {
+                "column" : 18,
+                "file" : "/Users/EduardoR/Documents/DevProjs/MinimumRcpp/src/MinimumRcpp.cpp",
+                "kind" : 6,
+                "line" : 87,
+                "name" : "wrap(const int &)",
+                "parent_name" : "",
+                "usr" : "c:@N@Rcpp@F@wrap#&1I#"
+            },
+            {
+                "column" : 18,
+                "file" : "/Users/EduardoR/Documents/DevProjs/MinimumRcpp/src/MinimumRcpp.cpp",
+                "kind" : 6,
+                "line" : 102,
+                "name" : "wrap(const int &)",
+                "parent_name" : "",
+                "usr" : "c:@N@Rcpp@F@wrap#&1I#"
+            },
+            {
+                "column" : 18,
+                "file" : "/Users/EduardoR/Documents/DevProjs/MinimumRcpp/src/MinimumRcpp.cpp",
+                "kind" : 6,
+                "line" : 114,
+                "name" : "wrap(const int &)",
+                "parent_name" : "",
+                "usr" : "c:@N@Rcpp@F@wrap#&1I#"
+            },
+            {
+                "column" : 18,
+                "file" : "/Users/EduardoR/Documents/DevProjs/MinimumRcpp/src/MinimumRcpp.cpp",
+                "kind" : 6,
+                "line" : 130,
+                "name" : "wrap(const int &)",
+                "parent_name" : "",
+                "usr" : "c:@N@Rcpp@F@wrap#&1I#"
+            }
+        ],
+        "file" : "/Users/EduardoR/Documents/DevProjs/MinimumRcpp/src/MinimumRcpp.cpp",
+        "file_last_write" : 1581450292
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 11,
+                "file" : "/Users/EduardoR/Documents/DevProjs/MinimumRcpp/src/minFindParetoSet.cpp",
+                "kind" : 6,
+                "line" : 23,
+                "name" : "findParetoSet(SEXP)",
+                "parent_name" : "",
+                "usr" : "c:@F@findParetoSet#*$@S@SEXPREC#"
+            }
+        ],
+        "file" : "/Users/EduardoR/Documents/DevProjs/MinimumRcpp/src/minFindParetoSet.cpp",
+        "file_last_write" : 1581450530
+    },
+    {
+        "definitions" : [
             {
                 "column" : 6,
                 "file" : "/Users/EduardoR/Documents/DevProjs/MinimumRcpp/src/rcpp_hello_world.cpp",

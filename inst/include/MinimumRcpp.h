@@ -1,6 +1,6 @@
-#ifndef __voteR_h__
-#define __voteR_h__
-#include "voteR_RcppExports.h" /** Might need to generate this file **/ 
+#ifndef __MinimumRcpp_h__
+#define __MinimumRcpp_h__
+#include "MinimumRcpp_RcppExports.h" /** Might need to generate this file **/ 
 #include <RcppCommon.h>
 
 #include <boost/geometry.hpp>
@@ -20,7 +20,7 @@
 
 BOOST_GEOMETRY_REGISTER_BOOST_TUPLE_CS(cs::cartesian)
   
-  typedef boost::tuple<double, double> boostTuple;
+typedef boost::tuple<double, double> boostTuple;
 typedef boost::geometry::model::polygon<boostTuple, true, true> boostPolygon;
 
 typedef boost::numeric::ublas::vector<double> ublasVector;
@@ -75,7 +75,7 @@ template <> SEXP wrap(const ublasVector& aUblasVector);
 
 }
 
-#endif // __voteR_h__
+#endif // __MinimumRcpp_h__
 
 
 

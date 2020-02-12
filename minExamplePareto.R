@@ -13,7 +13,8 @@ rm(list = ls(all = TRUE))
 
 
 
-library(voteR)
+#library(voteR)
+library(MinimumRcpp)
 
 
 ####################################################################
