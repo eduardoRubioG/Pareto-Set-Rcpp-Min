@@ -46,7 +46,7 @@ template <> boostTuple as(SEXP aSexpVector) {
 
 
 
-R Matrix to ublas matrix
+// R Matrix to ublas matrix
 template <> ublasMatrix as(SEXP aSexpMatrix) {
   NumericMatrix aRcppMatrix(aSexpMatrix);
 
@@ -65,7 +65,7 @@ template <> ublasMatrix as(SEXP aSexpMatrix) {
 }
 
 
-R vector to ublas vector
+// R vector to ublas vector
 template <> ublasVector as(SEXP aSexpVector) {
   NumericVector aRcppVector(aSexpVector);
   ublasVector aUblasVector(aRcppVector.size());
@@ -110,7 +110,7 @@ template <> SEXP wrap(const boostTuple& aBoostTuple) {
 
 
 
-ublas matrix to Rccp:NumericMatrix
+// ublas matrix to Rccp:NumericMatrix
 template <> SEXP wrap(const ublasMatrix& aUblasMatrix) {
   unsigned int rows = aUblasMatrix.size1();
   unsigned int cols = aUblasMatrix.size2();
