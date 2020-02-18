@@ -1,9 +1,54 @@
 [
     {
         "definitions" : [
+            {
+                "column" : 38,
+                "file" : "/Users/EduardoR/Documents/DevProjs/MinimumRcpp/inst/include/MinimumRcpp.h",
+                "kind" : 8,
+                "line" : 23,
+                "name" : "boostTuple",
+                "parent_name" : "",
+                "usr" : "c:MinimumRcpp.h@T@boostTuple"
+            },
+            {
+                "column" : 65,
+                "file" : "/Users/EduardoR/Documents/DevProjs/MinimumRcpp/inst/include/MinimumRcpp.h",
+                "kind" : 8,
+                "line" : 24,
+                "name" : "boostPolygon",
+                "parent_name" : "",
+                "usr" : "c:MinimumRcpp.h@T@boostPolygon"
+            },
+            {
+                "column" : 47,
+                "file" : "/Users/EduardoR/Documents/DevProjs/MinimumRcpp/inst/include/MinimumRcpp.h",
+                "kind" : 8,
+                "line" : 26,
+                "name" : "ublasVector",
+                "parent_name" : "",
+                "usr" : "c:MinimumRcpp.h@T@ublasVector"
+            },
+            {
+                "column" : 47,
+                "file" : "/Users/EduardoR/Documents/DevProjs/MinimumRcpp/inst/include/MinimumRcpp.h",
+                "kind" : 8,
+                "line" : 27,
+                "name" : "ublasMatrix",
+                "parent_name" : "",
+                "usr" : "c:MinimumRcpp.h@T@ublasMatrix"
+            },
+            {
+                "column" : 88,
+                "file" : "/Users/EduardoR/Documents/DevProjs/MinimumRcpp/inst/include/MinimumRcpp.h",
+                "kind" : 8,
+                "line" : 29,
+                "name" : "boostPolygon2",
+                "parent_name" : "",
+                "usr" : "c:MinimumRcpp.h@T@boostPolygon2"
+            }
         ],
         "file" : "/Users/EduardoR/Documents/DevProjs/MinimumRcpp/inst/include/MinimumRcpp.h",
-        "file_last_write" : 1581457896
+        "file_last_write" : 1581544956
     },
     {
         "definitions" : [
@@ -12,76 +57,22 @@
                 "file" : "/Users/EduardoR/Documents/DevProjs/MinimumRcpp/src/MinimumRcpp.cpp",
                 "kind" : 6,
                 "line" : 20,
-                "name" : "as(SEXP)",
+                "name" : "as<>(SEXP)",
                 "parent_name" : "",
-                "usr" : "c:@N@Rcpp@F@as#*$@S@SEXPREC#"
+                "usr" : "c:@N@Rcpp@F@as<#$@N@boost@N@geometry@N@model@C@polygon>#$@N@boost@N@tuples@C@tuple>#d#d#$@N@boost@N@tuples@S@null_type#S2_#S2_#S2_#S2_#S2_#S2_#S2_#Vb1#Vb1#@N@std@N@__1@CT>2#T#T@vector#@N@std@N@__1@CT>2#T#T@vector#@N@std@N@__1@CT>1#T@allocator#@N@std@N@__1@CT>1#T@allocator>#*$@S@SEXPREC#"
             },
             {
                 "column" : 24,
                 "file" : "/Users/EduardoR/Documents/DevProjs/MinimumRcpp/src/MinimumRcpp.cpp",
                 "kind" : 6,
                 "line" : 35,
-                "name" : "as(SEXP)",
+                "name" : "as<>(SEXP)",
                 "parent_name" : "",
-                "usr" : "c:@N@Rcpp@F@as#*$@S@SEXPREC#"
-            },
-            {
-                "column" : 25,
-                "file" : "/Users/EduardoR/Documents/DevProjs/MinimumRcpp/src/MinimumRcpp.cpp",
-                "kind" : 6,
-                "line" : 50,
-                "name" : "as(SEXP)",
-                "parent_name" : "",
-                "usr" : "c:@N@Rcpp@F@as#*$@S@SEXPREC#"
-            },
-            {
-                "column" : 25,
-                "file" : "/Users/EduardoR/Documents/DevProjs/MinimumRcpp/src/MinimumRcpp.cpp",
-                "kind" : 6,
-                "line" : 69,
-                "name" : "as(SEXP)",
-                "parent_name" : "",
-                "usr" : "c:@N@Rcpp@F@as#*$@S@SEXPREC#"
-            },
-            {
-                "column" : 18,
-                "file" : "/Users/EduardoR/Documents/DevProjs/MinimumRcpp/src/MinimumRcpp.cpp",
-                "kind" : 6,
-                "line" : 87,
-                "name" : "wrap(const int &)",
-                "parent_name" : "",
-                "usr" : "c:@N@Rcpp@F@wrap#&1I#"
-            },
-            {
-                "column" : 18,
-                "file" : "/Users/EduardoR/Documents/DevProjs/MinimumRcpp/src/MinimumRcpp.cpp",
-                "kind" : 6,
-                "line" : 102,
-                "name" : "wrap(const int &)",
-                "parent_name" : "",
-                "usr" : "c:@N@Rcpp@F@wrap#&1I#"
-            },
-            {
-                "column" : 18,
-                "file" : "/Users/EduardoR/Documents/DevProjs/MinimumRcpp/src/MinimumRcpp.cpp",
-                "kind" : 6,
-                "line" : 114,
-                "name" : "wrap(const int &)",
-                "parent_name" : "",
-                "usr" : "c:@N@Rcpp@F@wrap#&1I#"
-            },
-            {
-                "column" : 18,
-                "file" : "/Users/EduardoR/Documents/DevProjs/MinimumRcpp/src/MinimumRcpp.cpp",
-                "kind" : 6,
-                "line" : 130,
-                "name" : "wrap(const int &)",
-                "parent_name" : "",
-                "usr" : "c:@N@Rcpp@F@wrap#&1I#"
+                "usr" : "c:@N@Rcpp@F@as<#$@N@boost@N@tuples@C@tuple>#d#d#$@N@boost@N@tuples@S@null_type#S1_#S1_#S1_#S1_#S1_#S1_#S1_>#*$@S@SEXPREC#"
             }
         ],
         "file" : "/Users/EduardoR/Documents/DevProjs/MinimumRcpp/src/MinimumRcpp.cpp",
-        "file_last_write" : 1581450292
+        "file_last_write" : 1581544868
     },
     {
         "definitions" : [
@@ -97,20 +88,5 @@
         ],
         "file" : "/Users/EduardoR/Documents/DevProjs/MinimumRcpp/src/minFindParetoSet.cpp",
         "file_last_write" : 1581450530
-    },
-    {
-        "definitions" : [
-            {
-                "column" : 6,
-                "file" : "/Users/EduardoR/Documents/DevProjs/MinimumRcpp/src/rcpp_hello_world.cpp",
-                "kind" : 6,
-                "line" : 6,
-                "name" : "rcpp_hello_world",
-                "parent_name" : "",
-                "usr" : "c:@F@rcpp_hello_world#"
-            }
-        ],
-        "file" : "/Users/EduardoR/Documents/DevProjs/MinimumRcpp/src/rcpp_hello_world.cpp",
-        "file_last_write" : 1580937974
     }
 ]

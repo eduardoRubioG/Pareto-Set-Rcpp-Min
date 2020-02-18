@@ -46,33 +46,33 @@ template <> boostTuple as(SEXP aSexpVector) {
 
 
 
-// R Matrix to ublas matrix
+R Matrix to ublas matrix
 template <> ublasMatrix as(SEXP aSexpMatrix) {
   NumericMatrix aRcppMatrix(aSexpMatrix);
-  
+
   unsigned int rows = aRcppMatrix.nrow();
   unsigned int cols = aRcppMatrix.ncol();
-  
+
   ublasMatrix aUblassMatrix(rows, cols);
-  
+
   for (unsigned int i = 0; i < rows; ++i) {
     for (unsigned int j = 0; j < cols; ++j) {
       double x = aUblassMatrix(i, j);
-      aUblassMatrix(i, j) = x;                        
+      aUblassMatrix(i, j) = x;
     }
   }
   return (aUblassMatrix);
 }
 
 
-// R vector to ublas vector
+R vector to ublas vector
 template <> ublasVector as(SEXP aSexpVector) {
   NumericVector aRcppVector(aSexpVector);
   ublasVector aUblasVector(aRcppVector.size());
-  
+
   for (int i = 0; i < aRcppVector.size(); ++i) {
     double x = aRcppVector(i);
-    aUblasVector(i) = x; 
+    aUblasVector(i) = x;
   }
   return (aUblasVector);
 }
@@ -110,13 +110,13 @@ template <> SEXP wrap(const boostTuple& aBoostTuple) {
 
 
 
-// ublas matrix to Rccp:NumericMatrix    
+ublas matrix to Rccp:NumericMatrix
 template <> SEXP wrap(const ublasMatrix& aUblasMatrix) {
   unsigned int rows = aUblasMatrix.size1();
   unsigned int cols = aUblasMatrix.size2();
-  
+
   NumericMatrix aRcppMatrix(rows, cols);
-  
+
   for (unsigned int i = 0; i < rows; ++i) {
     for (unsigned int j = 0; j < cols; ++j) {
       const double aTempElement = aRcppMatrix(i, j);
@@ -124,19 +124,19 @@ template <> SEXP wrap(const ublasMatrix& aUblasMatrix) {
     }
   }
   return Rcpp::wrap(aRcppMatrix);
-}    
+}
 
-// ublas matrix to Rccp:NumericMatrix 
+// ublas matrix to Rccp:NumericMatrix
 template <> SEXP wrap(const ublasVector& aUblasVector) {
-  
+
   NumericVector aRcppVector(aUblasVector.size());
-  
+
   for(int i = 0; i < aUblasVector.size(); ++i) {
     const double aTempElement = aUblasVector[i];
     aRcppVector(i) = aTempElement;
   }
   return Rcpp::wrap(aRcppVector);
-  
+
 }
 
 

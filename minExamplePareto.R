@@ -41,9 +41,3 @@ paretoSetS1 <- findParetoSet( cbind(staticVoterDataFrame1$xLocation, staticVoter
 paretoSetS1
 
 
-
-# DO NOT RUN
-
-findParetoSet(staticVoterDataFrame1)
-
-

@@ -20,10 +20,6 @@ findParetoSet <- function(idealPoints) {
     .Call(`_MinimumRcpp_findParetoSet`, idealPoints)
 }
 
-rcpp_hello_world <- function() {
-    .Call(`_MinimumRcpp_rcpp_hello_world`)
-}
-
 # Register entry points for exported C++ functions
 methods::setLoadAction(function(ns) {
     .Call('_MinimumRcpp_RcppExport_registerCCallable', PACKAGE = 'MinimumRcpp')

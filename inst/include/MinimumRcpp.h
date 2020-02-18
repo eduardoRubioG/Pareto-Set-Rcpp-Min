@@ -61,7 +61,7 @@ template <> SEXP wrap(const boostPolygon& aBoostPolygon);
 template <> SEXP wrap(const boostTuple& aBoostTuple);
 
 
-// ublas matrix to Rccp:NumericMatrix
+//ublas matrix to Rccp:NumericMatrix
 template <> SEXP wrap(const ublasMatrix& aUblasMatrix);
 
 // ublas vector to Rccp:NumericMatrix

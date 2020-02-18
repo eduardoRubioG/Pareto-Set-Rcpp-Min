@@ -42,16 +42,6 @@ RcppExport SEXP _MinimumRcpp_findParetoSet(SEXP idealPointsSEXP) {
     UNPROTECT(1);
     return rcpp_result_gen;
 }
-// rcpp_hello_world
-List rcpp_hello_world();
-RcppExport SEXP _MinimumRcpp_rcpp_hello_world() {
-BEGIN_RCPP
-    Rcpp::RObject rcpp_result_gen;
-    Rcpp::RNGScope rcpp_rngScope_gen;
-    rcpp_result_gen = Rcpp::wrap(rcpp_hello_world());
-    return rcpp_result_gen;
-END_RCPP
-}
 
 // validate (ensure exported C++ functions exist before calling them)
 static int _MinimumRcpp_RcppExport_validate(const char* sig) { 
@@ -71,7 +61,6 @@ RcppExport SEXP _MinimumRcpp_RcppExport_registerCCallable() {
 
 static const R_CallMethodDef CallEntries[] = {
     {"_MinimumRcpp_findParetoSet", (DL_FUNC) &_MinimumRcpp_findParetoSet, 1},
-    {"_MinimumRcpp_rcpp_hello_world", (DL_FUNC) &_MinimumRcpp_rcpp_hello_world, 0},
     {"_MinimumRcpp_RcppExport_registerCCallable", (DL_FUNC) &_MinimumRcpp_RcppExport_registerCCallable, 0},
     {NULL, NULL, 0}
 };
