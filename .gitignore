@@ -5,6 +5,9 @@
 # Session Data files
 .RData
 
+# Rcpp pbject files 
+.o
+
 # Example code in package build process
 *-Ex.R
 
