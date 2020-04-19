@@ -24,27 +24,6 @@ namespace MinimumRcpp {
         }
     }
 
-    inline DataFrame findParetoSet(SEXP idealPoints) {
-        typedef SEXP(*Ptr_findParetoSet)(SEXP);
-        static Ptr_findParetoSet p_findParetoSet = NULL;
-        if (p_findParetoSet == NULL) {
-            validateSignature("DataFrame(*findParetoSet)(SEXP)");
-            p_findParetoSet = (Ptr_findParetoSet)R_GetCCallable("MinimumRcpp", "_MinimumRcpp_findParetoSet");
-        }
-        RObject rcpp_result_gen;
-        {
-            RNGScope RCPP_rngScope_gen;
-            rcpp_result_gen = p_findParetoSet(Shield<SEXP>(Rcpp::wrap(idealPoints)));
-        }
-        if (rcpp_result_gen.inherits("interrupted-error"))
-            throw Rcpp::internal::InterruptedException();
-        if (Rcpp::internal::isLongjumpSentinel(rcpp_result_gen))
-            throw Rcpp::LongjumpException(rcpp_result_gen);
-        if (rcpp_result_gen.inherits("try-error"))
-            throw Rcpp::exception(Rcpp::as<std::string>(rcpp_result_gen).c_str());
-        return Rcpp::as<DataFrame >(rcpp_result_gen);
-    }
-
 }
 
 #endif // RCPP_MinimumRcpp_RCPPEXPORTS_H_GEN_

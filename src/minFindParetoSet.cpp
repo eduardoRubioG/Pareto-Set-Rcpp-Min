@@ -4,7 +4,7 @@
 using namespace Rcpp;
 
 
-//' findParetoSet
+//' @title findParetoSet
 //' 
 //' Will find the pareto set in a two dimensional spatial voting model given a set of ideal points.
 //' 
@@ -17,9 +17,8 @@ using namespace Rcpp;
 //' 
 //' @return The set of points that constitutes the pareto set of the set of alternatives. The points are listed down the rows in clockwise
 //' or counterclockwise order with the first and last element in the matrix being the same ideal point.
-//' 
 //' @export
-// [[Rcpp::export]]
+
 DataFrame findParetoSet(SEXP idealPoints){
   
   // Conversion of idealPoints here to boost::geometry polygon

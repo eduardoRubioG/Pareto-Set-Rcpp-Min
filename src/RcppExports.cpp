@@ -8,64 +8,17 @@
 
 using namespace Rcpp;
 
-// findParetoSet
-DataFrame findParetoSet(SEXP idealPoints);
-static SEXP _MinimumRcpp_findParetoSet_try(SEXP idealPointsSEXP) {
-BEGIN_RCPP
-    Rcpp::RObject rcpp_result_gen;
-    Rcpp::traits::input_parameter< SEXP >::type idealPoints(idealPointsSEXP);
-    rcpp_result_gen = Rcpp::wrap(findParetoSet(idealPoints));
-    return rcpp_result_gen;
-END_RCPP_RETURN_ERROR
-}
-RcppExport SEXP _MinimumRcpp_findParetoSet(SEXP idealPointsSEXP) {
-    SEXP rcpp_result_gen;
-    {
-        Rcpp::RNGScope rcpp_rngScope_gen;
-        rcpp_result_gen = PROTECT(_MinimumRcpp_findParetoSet_try(idealPointsSEXP));
-    }
-    Rboolean rcpp_isInterrupt_gen = Rf_inherits(rcpp_result_gen, "interrupted-error");
-    if (rcpp_isInterrupt_gen) {
-        UNPROTECT(1);
-        Rf_onintr();
-    }
-    bool rcpp_isLongjump_gen = Rcpp::internal::isLongjumpSentinel(rcpp_result_gen);
-    if (rcpp_isLongjump_gen) {
-        Rcpp::internal::resumeJump(rcpp_result_gen);
-    }
-    Rboolean rcpp_isError_gen = Rf_inherits(rcpp_result_gen, "try-error");
-    if (rcpp_isError_gen) {
-        SEXP rcpp_msgSEXP_gen = Rf_asChar(rcpp_result_gen);
-        UNPROTECT(1);
-        Rf_error(CHAR(rcpp_msgSEXP_gen));
-    }
-    UNPROTECT(1);
-    return rcpp_result_gen;
-}
 
 // validate (ensure exported C++ functions exist before calling them)
 static int _MinimumRcpp_RcppExport_validate(const char* sig) { 
     static std::set<std::string> signatures;
     if (signatures.empty()) {
-        signatures.insert("DataFrame(*findParetoSet)(SEXP)");
     }
     return signatures.find(sig) != signatures.end();
 }
 
 // registerCCallable (register entry points for exported C++ functions)
 RcppExport SEXP _MinimumRcpp_RcppExport_registerCCallable() { 
-    R_RegisterCCallable("MinimumRcpp", "_MinimumRcpp_findParetoSet", (DL_FUNC)_MinimumRcpp_findParetoSet_try);
     R_RegisterCCallable("MinimumRcpp", "_MinimumRcpp_RcppExport_validate", (DL_FUNC)_MinimumRcpp_RcppExport_validate);
     return R_NilValue;
-}
-
-static const R_CallMethodDef CallEntries[] = {
-    {"_MinimumRcpp_findParetoSet", (DL_FUNC) &_MinimumRcpp_findParetoSet, 1},
-    {"_MinimumRcpp_RcppExport_registerCCallable", (DL_FUNC) &_MinimumRcpp_RcppExport_registerCCallable, 0},
-    {NULL, NULL, 0}
-};
-
-RcppExport void R_init_MinimumRcpp(DllInfo *dll) {
-    R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
-    R_useDynamicSymbols(dll, FALSE);
 }
